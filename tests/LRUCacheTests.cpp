@@ -92,3 +92,12 @@ TEST_CASE("LRUCache larger capacity") {
     }
 }
 
+TEST_CASE("LRUCache test that fails") {
+    LRUCache cache(2);
+
+    SECTION("Intentional failure") {
+        cache.put(1, 1);
+        cache.put(2, 2);
+        REQUIRE(cache.get(1) == 2); // This is intended to fail
+    }
+}
