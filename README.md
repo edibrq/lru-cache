@@ -12,28 +12,13 @@ This project implements an LRU (Least Recently Used) cache in C++ using a doubly
 1. Clone the repository:
 
 ```bash
-git clone <repository-url> cd <repository-directory>
+git clone https://github.com/edibrq/lru-cache.git
 ```
 
-2. Create a build directory and run CMake:
+2. Build project and run tests:
 
 ```bash
-mkdir build
-cd build
-cmake ..
-```
-
-3. Build the project:
-
-```bash
-cmake --build .
-```
-
-## Running Tests
-
-To run the unit tests, execute the following command in the `build` directory:
-```bash
-ctest
+bash build.sh
 ```
 
 ## Dependencies
